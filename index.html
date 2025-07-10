@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Travel Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Font styles -->
+        <link rel="stylesheet" href="font/fonts.css">
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/utility.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Go<span>Travel</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Explore the World with GoTravel</h1>
+                    <p>Welcome to GoTravel! Enjoy travelling and discover new destinations with ease.
+                    Let us be your companion for unforgettable journeys and seamless adventures. Start exploring today and make every trip memorable.</p>
+                </div>
+                <div class = "header-form">
+                    <h2>Choose your Travel location:</h2>
+                    <form class = "flex">
+                        <input type = "text" class = "form-control" placeholder="Destination name">
+                        <input type="date" class = "form-control" placeholder="Date">
+                        <input type="number" class = "form-control" placeholder="Price ($)">
+                        <input type="submit" class = "btn" value = "Search">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+                <!-- featured section -->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Know about some beautiful places before your travel</span>
+                    <h2 class = "lg-title">Featured Places</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-reo-de-janeiro-brazil.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <br><i class = "fas fa-map-marker-alt"></i>
+                                Reo De Janeiro, Brazil
+                            </span>
+                            <div>
+                                <br><p class="text">Experience the vibrant culture and breathtaking landscapes of Rio de Janeiro, Brazil. 
+                                    From the iconic Christ the Redeemer statue to the stunning beaches of Copacabana and Ipanema, Rio offers unforgettable adventures.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-sydney-australia.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <br><i class = "fas fa-map-marker-alt"></i>
+                                Sydney, Australia
+                            </span>
+                            <div>
+                                <br><p class="text">Visit Sydney, Australia, famous for its iconic Opera House and beautiful harbour views.
+                                    Breathtaking views from the Sydney Harbour Bridge and wander through Sydney’s vibrant streets and market
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-berlin-germany.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <br><i class = "fas fa-map-marker-alt"></i>
+                                Berlin, Germany
+                            </span>
+                            <div>
+                                <br><p class = "text">Explore Berlin, Germany, a city rich in history and culture. 
+                                    Visit iconic landmarks like the Brandenburg Gate and the Berlin Wall, and enjoy world-class museums on Museum Island. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-khwaeng-wat-arun-thailand.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <br><i class = "fas fa-map-marker-alt"></i>
+                                Khwaeng wat arun, Thailand
+                            </span>
+                            <div>
+                                <br><p class = "text">Discover Khwaeng Wat Arun, Thailand, home to the iconic Wat Arun temple on the banks of the Chao Phraya River. 
+                                    Admire the temple’s stunning architecture, intricate porcelain mosaics, and breathtaking river views. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-rome-italy.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <br><i class = "fas fa-map-marker-alt"></i>
+                                Rome, Italy
+                            </span>
+                            <div>
+                                <br><p class = "text">Experience the timeless beauty of Rome, Italy, a city where ancient history meets vibrant modern life. 
+                                    Explore iconic landmarks such as the Colosseum, Roman Forum, and the Pantheon. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <br><i class = "fas fa-map-marker-alt"></i>
+                                Fuvahmulah, Maldives
+                            </span>
+                            <div>
+                                <br><p class = "text">Discover Fuvahmulah, Maldives, a unique island renowned for its lush landscapes and diverse wildlife. 
+                                    Enjoy pristine beaches, freshwater lakes, and vibrant coral reefs perfect for diving.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+         <!-- services section -->
+        <section id = "services" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about services that we offer</span>
+                    <h2 class = "lg-title">Our services</h2>
+                </div>
+
+                <div class = "services-row">
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-hotel"></i>
+                        </span>
+                        <h3>Luxurious Hotel</h3>
+                        <p class = "text">We offer luxurious hotels in every country, 
+                        ensuring comfort and convenience wherever you travel to your prime locations to make your stay truly memorable.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <h3>Travel Guide</h3>
+                        <p class = "text">We provide expert travel guides to assist you throughout your trip, 
+                        ensuring you have a smooth, enjoyable, 
+                        and informative travel experience.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-money-bill"></i>
+                        </span>
+                        <h3>Suitable Price</h3>
+                        <p class = "text">We offer trips tailored to suit the preferences and budgets of our customers,
+                        ensuring everyone can find the perfect travel experience.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- testimonials section -->
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">what our clients say about us</span>
+                    <h2 class = "lg-title">testimonials</h2>
+                </div>
+
+                <div class = "test-row">
+                    <div class = "test-item">
+                        <p class="text">My trip to Brazil was absolutely unforgettable! The vibrant culture, stunning beaches, and delicious food made every day an adventure. 
+                            GoTravel handled all the details, so I could just relax and enjoy the sights. Highly recommended!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-1.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Kevin Wilson</h3>
+                                <p class = "text">Trip to Brazil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Amazing experience in the Maldives! Crystal clear waters, beautiful beaches, and friendly locals. 
+                            GoTravel made everything easy and stress-free. Would definitely book again!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-2.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Ben Davis</h3>
+                                <p class = "text">Trip to Maldives</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">My trip to Thailand was truly amazing! The temples were breathtaking, the food was delicious, and the people were so welcoming. 
+                            GoTravel made the whole experience smooth and memorable. I can't wait for my next adventure!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-3.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Jaura Jones</h3>
+                                <p class = "text">Trip to Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of testimonials section -->
+
+          <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/video-section.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Go<span>Travel</span>
+                    </a>
+                <p class="text">
+                      GoTravel LLC does not guarantee the availability of advertised prices on its website or mobile applications,
+                      and may subject them to conditions like minimum stay requirements or blackout dates.<br><br>
+                      It is not responsible for external website content and estimated hotel prices are for reference only.<br>
+                    </p></p>
+                </div>
+
+                <div class = "footer-item">
+                   <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                    <li>
+                    <a href = "https://www.facebook.com/GoTravelOfficial" target="_blank" rel="noopener noreferrer">
+                      <i class = "fab fa-facebook-f"></i>
+                    </a>
+                   </li>
+                    <li>
+                    <a href = "https://www.instagram.com/GoTravelOfficial" target="_blank" rel="noopener noreferrer">
+                   <i class = "fab fa-instagram"></i>
+                   </a>
+                  </li>
+                  <li>
+                    <a href = "https://twitter.com/GoTravelOfficial" target="_blank" rel="noopener noreferrer">
+                    <i class = "fab fa-twitter"></i>
+                    </a>
+                </li>
+                 <li>
+                  <a href = "https://www.pinterest.com/GoTravelOfficial" target="_blank" rel="noopener noreferrer">
+                  <i class = "fab fa-pinterest"></i>
+                 </a>
+                </li>
+                 <li>
+                <a href = "https://plus.google.com/GoTravelOfficial" target="_blank" rel="noopener noreferrer">
+                <i class = "fab fa-google-plus"></i>
+                </a>
+               </li>
+               </ul>
+              </div>
+
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">Australia</a></li>
+                        <li><a href = "#">United Kingdom</a></li>
+                        <li><a href = "#">France</a></li>
+                        <li><a href = "#">Switzerland</a></li>
+                        <li><a href = "#">Italy</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js section -->
+        <script src="js/script.js"></script>
+         <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+</body>
+</html>
